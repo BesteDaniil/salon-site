@@ -1,4 +1,4 @@
-/* ===== BEAUTY ROOM — тёмно-зелёная тема ===== */
+/* ===== Look Star — тёмно-зелёная тема ===== */
 :root {
   /* Палитра */
   --green-900: #0e1a14;   /* почти чёрно-зелёный фон */
@@ -15,14 +15,10 @@
 
   /* Заглушки изображений (градиенты — заменишь на реальные фото) */
   --img-hero:      linear-gradient(135deg, #20342a, #0e1a14);
-  --img-manicure:  linear-gradient(135deg, #2a4a38, #16271e);
-  --img-color:     linear-gradient(135deg, #1d3327, #0e1a14);
-  --img-makeup:    linear-gradient(135deg, #2a4a38, #122019);
-  --img-nails:     linear-gradient(135deg, #234034, #0e1a14);
-  --img-brows:     linear-gradient(135deg, #2f5240, #16271e);
   --img-haircut:   linear-gradient(135deg, #1d3327, #0e1a14);
-  --img-tattoo:    linear-gradient(135deg, #16271e, #0a130e);
-  --img-piercing:  linear-gradient(135deg, #2a4a38, #16271e);
+  --img-color:     linear-gradient(135deg, #2a4a38, #122019);
+  --img-styling:   linear-gradient(135deg, #2f5240, #16271e);
+  --img-treatment: linear-gradient(135deg, #234034, #0e1a14);
   --img-care:      linear-gradient(135deg, #3c6450, #16271e);
   --img-face:      linear-gradient(135deg, #2a4a38, #0e1a14);
   --img-interior:  linear-gradient(135deg, #20342a, #0e1a14);
@@ -266,18 +262,19 @@ a { color: inherit; text-decoration: none; }
 .team-viewport { overflow: hidden; }
 .team-track { display: flex; gap: 20px; transition: transform .45s ease; }
 .team-card {
-  position: relative; flex: 0 0 calc((100% - 60px) / 4); height: 320px;
+  flex: 0 0 calc((100% - 60px) / 4);
   border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--line); background: var(--green-700);
+  display: flex; flex-direction: column;
+}
+.team-photo {
+  height: 260px;
   background-image: var(--img); background-size: cover; background-position: center;
-  border: 1px solid var(--line);
 }
-.team-card::before {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(10,19,14,.9), transparent 55%);
-}
-.team-info { position: absolute; left: 18px; bottom: 18px; z-index: 1; }
+.team-info { padding: 14px 16px 18px; }
 .team-info strong { display: block; font-size: 16px; font-weight: 500; }
-.team-info span { font-size: 13px; color: var(--muted); }
+.team-info .role { display: block; font-size: 13px; color: var(--gold); margin: 2px 0 8px; }
+.team-info p { font-size: 13px; color: var(--muted); line-height: 1.45; }
 .team-controls { display: flex; align-items: center; justify-content: space-between; margin-top: 26px; }
 .team-dots { display: flex; gap: 8px; }
 .team-dots button {
@@ -303,7 +300,10 @@ a { color: inherit; text-decoration: none; }
 .footer-nav a:hover { color: var(--cream); }
 .footer-hours p { font-size: 14px; color: var(--muted); }
 .footer-hours span { display: inline-block; width: 64px; color: var(--cream); }
-.footer-addr { font-size: 14px; color: var(--muted); margin: 18px 0; }
+.footer-addr { font-size: 14px; color: var(--muted); margin: 18px 0 6px; }
+.footer-phone { font-size: 14px; margin: 0 0 18px; }
+.footer-phone a { color: var(--cream); transition: color .2s; }
+.footer-phone a:hover { color: var(--gold); }
 .footer-social { display: flex; gap: 12px; }
 .footer-social a {
   width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line);

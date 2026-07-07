@@ -18,8 +18,8 @@
 ## Список переменных
 
 - `--img-hero` — большое фото на главной (герой)
-- `--img-manicure`, `--img-color` — мини-карточки в герое
-- `--img-makeup`, `--img-color`, `--img-nails`, `--img-brows`, `--img-haircut`, `--img-tattoo`, `--img-piercing` — плитки «Услуги»
+- `--img-haircut`, `--img-color` — мини-карточки в герое
+- `--img-haircut`, `--img-color`, `--img-styling`, `--img-treatment` — плитки «Услуги»
 - `--img-care` — карточка акции «Заботливый уход»
 - `--img-face` — фото в подвале
 - `--img-interior`, `--img-interior2..5` — фото салона на странице «О нас»
