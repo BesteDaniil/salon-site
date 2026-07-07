@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEAUTY ROOM — салон красоты в Минске</title>
+  <meta name="description" content="BEAUTY ROOM — пространство красоты, любви и заботы. Окрашивание, стрижки, маникюр, брови, макияж, тату и пирсинг в Минске." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">BEAUTY&nbsp;ROOM</a>
+      <nav class="nav" id="nav">
+        <a href="about.html">О нас</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#offers">Акции</a>
+        <a href="index.html#education">Обучение</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-left">
+        <h1 class="hero-title">BEAUTY<br /><span>ROOM</span></h1>
+        <p class="hero-sub">Пространство красоты, любви и заботы.<br />Специальные предложения для наших клиентов каждый месяц.</p>
+        <div class="hero-cards">
+          <a href="index.html#services" class="mini-card" style="--img: var(--img-manicure)">
+            <span>Маникюр</span>
+            <svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          <a href="index.html#services" class="mini-card" style="--img: var(--img-color)">
+            <span>Окрашивание</span>
+            <svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo" style="--img: var(--img-hero)">
+          <div class="hero-social">
+            <a href="#" aria-label="Telegram">✈</a>
+            <a href="#" aria-label="Телефон">☎</a>
+            <a href="#" aria-label="Instagram">◎</a>
+          </div>
+          <a href="#book" class="btn btn-dark hero-book">Записаться</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="why container">
+      <h2 class="section-title">Почему выбирают нас?</h2>
+      <div class="why-grid">
+        <article class="why-card">
+          <h3>Опытные специалисты</h3>
+          <p>Ежегодно мастера улучшают свои навыки на курсах, отрабатывают и применяют в своей работе.</p>
+        </article>
+        <article class="why-card">
+          <h3>Премиальные средства</h3>
+          <p>В своей работе мы используем лучшие средства: ORGANIC BROW, TOKIO INKARAMI, KEVIN MURPHY.</p>
+        </article>
+        <article class="why-card">
+          <h3>Специальные предложения</h3>
+          <p>Каждый месяц мы обновляем специальные предложения для вас.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services container" id="services">
+      <h2 class="section-title">Услуги</h2>
+      <div class="services-grid">
+        <a class="service-tile s-wide" style="--img: var(--img-makeup)"><span>Макияж</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+        <a class="service-tile s-wide" style="--img: var(--img-color)"><span>Окрашивание волос</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+        <a class="service-tile" style="--img: var(--img-nails)"><span>Ногтевой сервис</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+        <a class="service-tile" style="--img: var(--img-brows)"><span>Брови</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+        <a class="service-tile" style="--img: var(--img-haircut)"><span>Стрижки</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+        <a class="service-tile" style="--img: var(--img-tattoo)"><span>Тату</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+        <a class="service-tile" style="--img: var(--img-piercing)"><span>Пирсинг</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
+      </div>
+    </section>
+
+    <!-- Special offers -->
+    <section class="offers container" id="offers">
+      <h2 class="section-title">Специальные предложения</h2>
+      <div class="offers-grid">
+        <article class="offer-card" style="--img: var(--img-brows)">
+          <div class="offer-body">
+            <h3>Organic brows</h3>
+            <ul>
+              <li>Для любителей долговременной укладки</li>
+              <li>Для пересушенных и тонких бровей</li>
+              <li>Для густых и жёстких бровей</li>
+            </ul>
+            <div class="offer-foot">
+              <span class="discount">−10% скидка</span>
+              <a href="#book" class="btn btn-light">Записаться</a>
+            </div>
+          </div>
+        </article>
+        <article class="offer-card" style="--img: var(--img-care)">
+          <div class="offer-body">
+            <h3>Заботливый уход</h3>
+            <p>При записи на сложное окрашивание — окрашивание + стрижка.</p>
+            <div class="offer-foot">
+              <span class="discount">−10% скидка</span>
+              <a href="#book" class="btn btn-light">Записаться</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="education">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">BEAUTY ROOM</div>
+        <nav class="footer-nav">
+          <a href="about.html">О нас</a>
+          <a href="index.html#services">Услуги</a>
+          <a href="index.html#offers">Акции</a>
+          <a href="index.html#education">Обучение</a>
+        </nav>
+        <div class="footer-hours">
+          <p><span>Вт–Сб:</span> 10:00–19:00</p>
+          <p><span>Вс–Пн:</span> выходной</p>
+        </div>
+        <p class="footer-addr">г. Минск, ул. Платонова 22</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Телефон">☎</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Telegram">✈</a>
+        </div>
+      </div>
+      <div class="footer-photo" style="--img: var(--img-face)"></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
