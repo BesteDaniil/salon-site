@@ -242,6 +242,7 @@ a { color: inherit; text-decoration: none; }
 }
 .about-text p { color: var(--muted); margin-bottom: 16px; max-width: 460px; }
 .about-text .btn { margin-top: 14px; }
+.edu-lead { color: var(--cream); font-size: 19px; font-weight: 400; max-width: 460px; }
 
 /* Gallery */
 .gallery {
