@@ -131,9 +131,9 @@ a { color: inherit; text-decoration: none; }
 .hero-title span {
   display: block; color: var(--gold);
   font-family: 'Jost', system-ui, sans-serif;
-  font-size: .58em; font-weight: 700; letter-spacing: 0;
-  white-space: normal; text-align: justify; text-align-last: justify;
-  transform: scaleY(.52); transform-origin: left top; margin-top: 0;
+  font-size: .64em; font-weight: 700; letter-spacing: .02em;
+  white-space: nowrap;
+  transform: scaleX(1.64) scaleY(.58); transform-origin: left top; margin-top: 2px;
 }
 .hero-sub { color: var(--muted); margin: 24px 0 32px; max-width: 420px; }
 .hero-cards { display: flex; gap: 16px; }
