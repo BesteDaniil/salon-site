@@ -333,6 +333,16 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-wa svg { width: 20px; height: 20px; flex: none; }
 .btn-wa:hover { background: #2ee06f; transform: translateY(-2px); }
+.btn-tg {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 11px 20px; border-radius: 999px;
+  background: #29a9eb; color: #0a130e; font-size: 14px; font-weight: 500;
+  transition: transform .2s ease, background .2s ease;
+}
+.btn-tg svg { width: 20px; height: 20px; flex: none; }
+.btn-tg:hover { background: #46b8f5; transform: translateY(-2px); }
+.footer-cta { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; margin-top: 16px; }
+.footer-cta .btn-wa { margin-top: 0; }
 .footer-bottom {
   border-top: 1px solid var(--line); max-width: var(--maxw); margin: 0 auto;
   padding: 22px 24px; color: var(--muted); font-size: 13px; text-align: center;
