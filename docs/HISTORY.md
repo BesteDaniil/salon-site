@@ -127,3 +127,16 @@
 - Дублировать ли WhatsApp/Telegram на страницу «Обучение» (сейчас нет Telegram).
 
 ---
+
+## 2026-07-09 — GitHub CLI: автономный деплой (без окна входа)
+
+Настроен `gh` CLI на рабочей машине — теперь пуш салона можно делать через него, **без всплывающего «Connect to GitHub»**.
+
+- Репо: `github.com/BesteDaniil/salon-site`; сайт `https://bestedaniil.github.io/salon-site/`.
+- `gh` в `C:\Program Files\GitHub CLI\gh.exe` (v2.96), аккаунт **BesteDaniil**, токен (classic PAT «Claude Code CLI») в keyring, `gh auth setup-git` выполнен.
+- Пуш: обычный `git push` теперь проходит без запроса пароля (credential helper от gh).
+- Авторизация токеном — только через bash-пайп: `printf '%s' '<token>' | "/c/Program Files/GitHub CLI/gh.exe" auth login --with-token` (PowerShell даёт 401 из-за кодировки stdin).
+- Подробности по gh (создание репо, включение Pages, грабли) продублированы в `D:\jarvis\docs\OPERATIONS.md`.
+- Примечание: демо-кофейня «Зерно» — отдельный репозиторий `zerno`, к салону отношения не имеет.
+
+---
