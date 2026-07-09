@@ -325,6 +325,14 @@ a { color: inherit; text-decoration: none; }
   display: grid; place-items: center; color: var(--cream); transition: .2s;
 }
 .footer-social a:hover { background: var(--gold); color: var(--green-900); border-color: var(--gold); }
+.btn-wa {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 16px;
+  padding: 11px 20px; border-radius: 999px;
+  background: #25d366; color: #0a130e; font-size: 14px; font-weight: 500;
+  transition: transform .2s ease, background .2s ease;
+}
+.btn-wa svg { width: 20px; height: 20px; flex: none; }
+.btn-wa:hover { background: #2ee06f; transform: translateY(-2px); }
 .footer-bottom {
   border-top: 1px solid var(--line); max-width: var(--maxw); margin: 0 auto;
   padding: 22px 24px; color: var(--muted); font-size: 13px; text-align: center;
