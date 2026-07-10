@@ -352,6 +352,26 @@ a { color: inherit; text-decoration: none; }
 .btn-ig:hover { filter: brightness(1.08); transform: translateY(-2px); }
 .footer-cta { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; margin-top: 16px; }
 .footer-cta .btn-wa { margin-top: 0; }
+
+/* Пара кнопок «связаться» вместо записи */
+.cta-pair { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-book.cta-pair { justify-content: flex-end; }
+.offer-foot { flex-wrap: wrap; }
+
+/* ===== Отзывы (Яндекс.Карты) ===== */
+.reviews { padding: 40px 24px 80px; }
+.reviews-head { display: flex; align-items: center; gap: 22px; margin-bottom: 34px; flex-wrap: wrap; }
+.reviews-rating { font-family: 'Cormorant Garamond', serif; font-size: 58px; font-weight: 600; color: var(--gold); line-height: .9; }
+.reviews-stars { color: var(--gold); letter-spacing: 3px; font-size: 18px; }
+.reviews-meta { color: var(--muted); font-size: 15px; }
+.reviews-meta a { color: var(--cream); border-bottom: 1px solid var(--gold); transition: color .2s ease; }
+.reviews-meta a:hover { color: var(--gold); }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+.review-card { background: var(--green-700); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
+.review-stars { color: var(--gold); letter-spacing: 3px; margin-bottom: 14px; }
+.review-text { color: var(--cream); font-size: 15px; line-height: 1.6; }
+.review-author { margin-top: 16px; font-weight: 500; color: var(--gold); font-size: 15px; }
+@media (max-width: 900px) { .reviews-grid { grid-template-columns: 1fr; } }
 .footer-bottom {
   border-top: 1px solid var(--line); max-width: var(--maxw); margin: 0 auto;
   padding: 22px 24px; color: var(--muted); font-size: 13px; text-align: center;
