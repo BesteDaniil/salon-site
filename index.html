@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=8" />
+  <link rel="stylesheet" href="css/styles.css?v=9" />
 </head>
 <body>
   <!-- Header -->
@@ -26,7 +26,6 @@
       <nav class="nav" id="nav">
         <a href="about.html">О нас</a>
         <a href="index.html#services">Услуги</a>
-        <a href="index.html#prices">Цены</a>
         <a href="index.html#offers">Акции</a>
         <a href="index.html#reviews">Отзывы</a>
         <a href="education.html">Обучение</a>
@@ -88,22 +87,24 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="services container" id="services">
-      <h2 class="section-title">Услуги</h2>
-      <div class="services-grid">
-        <a class="service-tile s-wide" style="--img: var(--img-haircut)"><span>Стрижки</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
-        <a class="service-tile s-wide" style="--img: var(--img-color)"><span>Окрашивание волос</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
-        <a class="service-tile" style="--img: var(--img-styling)"><span>Укладка и причёски</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
-        <a class="service-tile" style="--img: var(--img-treatment)"><span>Уход и восстановление</span><svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a>
-      </div>
-    </section>
+    <!-- Направления -->
+    <section class="directions container" id="services">
+      <h2 class="section-title">Направления</h2>
+      <p class="prices-hint">У каждого направления — свой мастер и свои услуги. Нажмите на категорию, чтобы раскрыть цены. Стоимость может уточняться в зависимости от длины и густоты волос.</p>
 
-    <!-- Prices -->
-    <section class="prices container" id="prices">
-      <h2 class="section-title">Услуги и цены</h2>
-      <p class="prices-hint">Нажмите на категорию, чтобы раскрыть услуги и цены. Стоимость может уточняться в зависимости от длины и густоты волос.</p>
-      <div class="accordion">
+      <article class="direction">
+        <div class="direction-head">
+          <div class="direction-photo" style="--img: var(--img-dir-hair)"></div>
+          <div class="direction-intro">
+            <h3>Парикмахерский зал</h3>
+            <p>Стрижки, окрашивание, уход и восстановление, кератин, реконструкция и наращивание волос.</p>
+            <div class="direction-master">
+              <span class="dm-label">Мастер направления</span>
+              <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
 
         <div class="acc-item">
           <button class="acc-head" type="button" aria-expanded="false">
@@ -125,13 +126,6 @@
               <li><span class="price-name">Прикорневое мелирование + тонирование</span><span class="price-val">10 000 ₽</span></li>
               <li><span class="price-name">Доплата за густоту</span><span class="price-val">1000 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
@@ -151,13 +145,6 @@
               <li><span class="price-name">Пилинг кожи головы</span><span class="price-val">1500 ₽</span></li>
               <li><span class="price-name">Доплата за наращённые</span><span class="price-val">1000 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
@@ -175,13 +162,6 @@
               <li><span class="price-name">Реконструкция волос <em>более 60 см</em></span><span class="price-val">8500 ₽</span></li>
               <li><span class="price-name">Доплата за густоту</span><span class="price-val">1000 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
@@ -205,13 +185,6 @@
               <li><span class="price-name">Славянка эксклюзив 50 см+ <em>за 1 г</em></span><span class="price-val">450 ₽</span></li>
               <li><span class="price-name">Славянка эксклюзив 60 см+ <em>за 1 г</em></span><span class="price-val">500 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
@@ -230,15 +203,128 @@
               <li><span class="price-name">Волосы Славянка некрашеная <em>за 1 г</em></span><span class="price-val">500 ₽</span></li>
               <li><span class="price-name">Волосы Премиум <em>ручное плетение тресса</em></span><span class="price-val">42 000 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
+
+        <div class="acc-item">
+          <button class="acc-head" type="button" aria-expanded="false">
+            <span class="acc-title">Скупка натуральных волос</span>
+            <span class="acc-count">оценка индивидуально</span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="acc-panel"><div class="acc-panel-inner">
+            <p class="acc-note">Покупаем и срезаем натуральные волосы — детские и взрослые, срезы и хвосты от 40 см, в том числе для наращивания. Стоимость рассчитывается индивидуально по фото: цвет, длина, состояние. Пришлите фото в WhatsApp или Telegram для точной оценки.</p>
+            <ul class="price-list">
+              <li><span class="price-name">Приём волос <em>детские и взрослые, от 40 см</em></span><span class="price-val">от 100 ₽ / г</span></li>
+            </ul>
+          </div></div>
+        </div>
+
+        </div>
+      </article>
+
+      <article class="direction">
+        <div class="direction-head">
+          <div class="direction-photo" style="--img: var(--img-dir-nails)"></div>
+          <div class="direction-intro">
+            <h3>Ногтевой сервис</h3>
+            <p>Маникюр и педикюр — аккуратно, гигиенично и с заботой о ваших руках и ногах.</p>
+            <div class="direction-master">
+              <span class="dm-label">Мастер направления</span>
+              <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-head" type="button" aria-expanded="false">
+            <span class="acc-title">Маникюр</span>
+            <span class="acc-count">6 услуг</span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="acc-panel"><div class="acc-panel-inner">
+            <ul class="price-list">
+              <li><span class="price-name">Маникюр без покрытия</span><span class="price-val">1500 ₽</span></li>
+              <li><span class="price-name">Маникюр + покрытие <em>снятие, укрепление гелем</em></span><span class="price-val">3000 ₽</span></li>
+              <li><span class="price-name">Наращивание ногтей <em>снятие, маникюр, укрепление, покрытие</em></span><span class="price-val">4500 ₽</span></li>
+              <li><span class="price-name">Френч / втирка</span><span class="price-val">500 ₽</span></li>
+              <li><span class="price-name">Дизайн <em>наклейки, стемпинг, роспись</em></span><span class="price-val">от 50 ₽ / шт</span></li>
+              <li><span class="price-name">Снятие</span><span class="price-val">500 ₽</span></li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-head" type="button" aria-expanded="false">
+            <span class="acc-title">Педикюр</span>
+            <span class="acc-count">5 услуг</span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="acc-panel"><div class="acc-panel-inner">
+            <ul class="price-list">
+              <li><span class="price-name">Гигиенический педикюр <em>пальчики и стопы, техника Smart</em></span><span class="price-val">2700 ₽</span></li>
+              <li><span class="price-name">Пальчики + покрытие</span><span class="price-val">3000 ₽</span></li>
+              <li><span class="price-name">Полный педикюр + покрытие</span><span class="price-val">3500 ₽</span></li>
+              <li><span class="price-name">Мужской гигиенический педикюр</span><span class="price-val">4000 ₽</span></li>
+              <li><span class="price-name">Снятие</span><span class="price-val">500 ₽</span></li>
+            </ul>
+          </div></div>
+        </div>
+
+        </div>
+      </article>
+
+      <article class="direction">
+        <div class="direction-head">
+          <div class="direction-photo" style="--img: var(--img-dir-makeup)"></div>
+          <div class="direction-intro">
+            <h3>Макияж и причёски</h3>
+            <p>Дневной, вечерний и свадебный макияж, укладки и полный образ для любого события.</p>
+            <div class="direction-master">
+              <span class="dm-label">Мастер направления</span>
+              <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-head" type="button" aria-expanded="false">
+            <span class="acc-title">Макияж и причёски</span>
+            <span class="acc-count">8 услуг</span>
+            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="acc-panel"><div class="acc-panel-inner">
+            <ul class="price-list">
+              <li><span class="price-name">Дневной макияж</span><span class="price-val">3500 ₽</span></li>
+              <li><span class="price-name">Вечерний макияж <em>для фотосессии</em></span><span class="price-val">4000 ₽</span></li>
+              <li><span class="price-name">Свадебный макияж</span><span class="price-val">5000 ₽</span></li>
+              <li><span class="price-name">Голливудская волна <em>объёмные / лёгкие волны, мальвинка</em></span><span class="price-val">4000 ₽</span></li>
+              <li><span class="price-name">Гладкий пучок / ракушка</span><span class="price-val">4000 ₽</span></li>
+              <li><span class="price-name">Полный образ <em>макияж + причёска</em></span><span class="price-val">7000 ₽</span></li>
+              <li><span class="price-name">Свадебный образ</span><span class="price-val">от 8000 ₽</span></li>
+              <li><span class="price-name">Обучение «Макияж для себя»</span><span class="price-val">5000 ₽</span></li>
+            </ul>
+          </div></div>
+        </div>
+
+        </div>
+      </article>
+
+      <article class="direction">
+        <div class="direction-head">
+          <div class="direction-photo" style="--img: var(--img-dir-brows)"></div>
+          <div class="direction-intro">
+            <h3>Брови, ресницы и перманент</h3>
+            <p>Оформление и архитектура бровей, наращивание и ламинирование ресниц, перманентный макияж.</p>
+            <div class="direction-master">
+              <span class="dm-label">Мастер направления</span>
+              <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
 
         <div class="acc-item">
           <button class="acc-head" type="button" aria-expanded="false">
@@ -257,13 +343,6 @@
               <li><span class="price-name">Ботокс для бровей</span><span class="price-val">600 ₽</span></li>
               <li><span class="price-name">Удаление пушковых волос на лице</span><span class="price-val">от 600 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
@@ -288,13 +367,6 @@
               <li><span class="price-name">Ленточное — коррекция 1 пары лент</span><span class="price-val">350 ₽</span></li>
               <li><span class="price-name">Ленточное — коррекция 40 лент</span><span class="price-val">7000 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
@@ -320,114 +392,12 @@
               <li><span class="price-name">Коррекция стрелки</span><span class="price-val">8000 ₽</span></li>
               <li><span class="price-name">Удаление татуажа ремувером</span><span class="price-val">4000 ₽</span></li>
             </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
           </div></div>
         </div>
 
-        <div class="acc-item">
-          <button class="acc-head" type="button" aria-expanded="false">
-            <span class="acc-title">Макияж и причёски</span>
-            <span class="acc-count">8 услуг</span>
-            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <div class="acc-panel"><div class="acc-panel-inner">
-            <ul class="price-list">
-              <li><span class="price-name">Дневной макияж</span><span class="price-val">3500 ₽</span></li>
-              <li><span class="price-name">Вечерний макияж <em>для фотосессии</em></span><span class="price-val">4000 ₽</span></li>
-              <li><span class="price-name">Свадебный макияж</span><span class="price-val">5000 ₽</span></li>
-              <li><span class="price-name">Голливудская волна <em>объёмные / лёгкие волны, мальвинка</em></span><span class="price-val">4000 ₽</span></li>
-              <li><span class="price-name">Гладкий пучок / ракушка</span><span class="price-val">4000 ₽</span></li>
-              <li><span class="price-name">Полный образ <em>макияж + причёска</em></span><span class="price-val">7000 ₽</span></li>
-              <li><span class="price-name">Свадебный образ</span><span class="price-val">от 8000 ₽</span></li>
-              <li><span class="price-name">Обучение «Макияж для себя»</span><span class="price-val">5000 ₽</span></li>
-            </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
-          </div></div>
         </div>
+      </article>
 
-        <div class="acc-item">
-          <button class="acc-head" type="button" aria-expanded="false">
-            <span class="acc-title">Маникюр</span>
-            <span class="acc-count">6 услуг</span>
-            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <div class="acc-panel"><div class="acc-panel-inner">
-            <ul class="price-list">
-              <li><span class="price-name">Маникюр без покрытия</span><span class="price-val">1500 ₽</span></li>
-              <li><span class="price-name">Маникюр + покрытие <em>снятие, укрепление гелем</em></span><span class="price-val">3000 ₽</span></li>
-              <li><span class="price-name">Наращивание ногтей <em>снятие, маникюр, укрепление, покрытие</em></span><span class="price-val">4500 ₽</span></li>
-              <li><span class="price-name">Френч / втирка</span><span class="price-val">500 ₽</span></li>
-              <li><span class="price-name">Дизайн <em>наклейки, стемпинг, роспись</em></span><span class="price-val">от 50 ₽ / шт</span></li>
-              <li><span class="price-name">Снятие</span><span class="price-val">500 ₽</span></li>
-            </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
-          </div></div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-head" type="button" aria-expanded="false">
-            <span class="acc-title">Педикюр</span>
-            <span class="acc-count">5 услуг</span>
-            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <div class="acc-panel"><div class="acc-panel-inner">
-            <ul class="price-list">
-              <li><span class="price-name">Гигиенический педикюр <em>пальчики и стопы, техника Smart</em></span><span class="price-val">2700 ₽</span></li>
-              <li><span class="price-name">Пальчики + покрытие</span><span class="price-val">3000 ₽</span></li>
-              <li><span class="price-name">Полный педикюр + покрытие</span><span class="price-val">3500 ₽</span></li>
-              <li><span class="price-name">Мужской гигиенический педикюр</span><span class="price-val">4000 ₽</span></li>
-              <li><span class="price-name">Снятие</span><span class="price-val">500 ₽</span></li>
-            </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
-          </div></div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-head" type="button" aria-expanded="false">
-            <span class="acc-title">Скупка натуральных волос</span>
-            <span class="acc-count">оценка индивидуально</span>
-            <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <div class="acc-panel"><div class="acc-panel-inner">
-            <p class="acc-note">Покупаем и срезаем натуральные волосы — детские и взрослые, срезы и хвосты от 40 см, в том числе для наращивания. Стоимость рассчитывается индивидуально по фото: цвет, длина, состояние. Пришлите фото в WhatsApp или Telegram для точной оценки.</p>
-            <ul class="price-list">
-              <li><span class="price-name">Приём волос <em>детские и взрослые, от 40 см</em></span><span class="price-val">от 100 ₽ / г</span></li>
-            </ul>
-            <div class="cat-masters">
-              <h4>Мастера категории</h4>
-              <div class="masters-strip">
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-                <div class="master-chip is-placeholder"><span class="master-ava"></span><span class="master-meta"><strong>Имя мастера</strong><em>специализация</em></span></div>
-              </div>
-            </div>
-          </div></div>
-        </div>
-
-      </div>
     </section>
 
     <!-- Special offers -->
@@ -514,7 +484,6 @@
         <nav class="footer-nav">
           <a href="about.html">О нас</a>
           <a href="index.html#services">Услуги</a>
-        <a href="index.html#prices">Цены</a>
           <a href="index.html#offers">Акции</a>
         <a href="index.html#reviews">Отзывы</a>
           <a href="education.html">Обучение</a>
