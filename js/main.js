@@ -16,6 +16,19 @@
   }
 })();
 
+// ===== Аккордеон «Услуги и цены» =====
+(function () {
+  const items = document.querySelectorAll('.accordion .acc-item');
+  if (!items.length) return;
+  items.forEach((item) => {
+    const head = item.querySelector('.acc-head');
+    head.addEventListener('click', () => {
+      const isOpen = item.classList.toggle('open');
+      head.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+})();
+
 // ===== Карусель «Команда» =====
 (function () {
   const track = document.getElementById('teamTrack');
