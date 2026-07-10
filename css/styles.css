@@ -341,6 +341,15 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-tg svg { width: 20px; height: 20px; flex: none; }
 .btn-tg:hover { background: #46b8f5; transform: translateY(-2px); }
+.btn-ig {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 11px 20px; border-radius: 999px;
+  background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);
+  color: #fff; font-size: 14px; font-weight: 500;
+  transition: transform .2s ease, filter .2s ease;
+}
+.btn-ig svg { width: 20px; height: 20px; flex: none; }
+.btn-ig:hover { filter: brightness(1.08); transform: translateY(-2px); }
 .footer-cta { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; margin-top: 16px; }
 .footer-cta .btn-wa { margin-top: 0; }
 .footer-bottom {
